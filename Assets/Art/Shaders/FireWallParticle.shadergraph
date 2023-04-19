@@ -173,6 +173,9 @@
         },
         {
             "m_Id": "a9ef3bf546274c7f84b2eb06a21894de"
+        },
+        {
+            "m_Id": "81b7dc13f7c6436babcdfd9e42741e27"
         }
     ],
     "m_GroupDatas": [
@@ -466,6 +469,20 @@
                     "m_Id": "a9ef3bf546274c7f84b2eb06a21894de"
                 },
                 "m_SlotId": 1
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "81b7dc13f7c6436babcdfd9e42741e27"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "244b79b89fb14a2998e58d0c7787f022"
+                },
+                "m_SlotId": 0
             }
         },
         {
@@ -1141,6 +1158,29 @@
     "m_Property": {
         "m_Id": "dbe8814e502b4d559b1b5864becf99d6"
     }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector3MaterialSlot",
+    "m_ObjectId": "16a18db6c9ff40c7ac759a886c33b422",
+    "m_Id": 0,
+    "m_DisplayName": "Out",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "m_Labels": []
 }
 
 {
@@ -3071,6 +3111,39 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.PositionNode",
+    "m_ObjectId": "81b7dc13f7c6436babcdfd9e42741e27",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Position",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -1888.0,
+            "y": -168.79998779296876,
+            "width": 208.0,
+            "height": 315.20001220703127
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "16a18db6c9ff40c7ac759a886c33b422"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 1,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 2,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Space": 2
 }
 
 {
