@@ -998,7 +998,7 @@
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
-    "m_Value": 1.0,
+    "m_Value": 2.2100000381469728,
     "m_FloatType": 0,
     "m_RangeValues": {
         "x": 0.0,
@@ -1430,10 +1430,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -92.80000305175781,
-            "y": 784.800048828125,
-            "width": 144.8000030517578,
-            "height": 128.79998779296876
+            "x": -540.7999877929688,
+            "y": 898.4000244140625,
+            "width": 208.0,
+            "height": 312.7999267578125
         }
     },
     "m_Slots": [
@@ -1443,7 +1443,7 @@
     ],
     "synonyms": [],
     "m_Precision": 0,
-    "m_PreviewExpanded": false,
+    "m_PreviewExpanded": true,
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
@@ -1522,10 +1522,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 139.2000274658203,
-            "y": 764.7999877929688,
-            "width": 120.0000228881836,
-            "height": 149.60003662109376
+            "x": -189.60000610351563,
+            "y": 835.2000122070313,
+            "width": 120.80000305175781,
+            "height": 148.79998779296876
         }
     },
     "m_Slots": [
@@ -1566,10 +1566,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 120.00000762939453,
-            "y": 968.0,
-            "width": 156.79998779296876,
-            "height": 34.4000244140625
+            "x": -204.0,
+            "y": 1027.199951171875,
+            "width": 157.60000610351563,
+            "height": 33.60009765625
         }
     },
     "m_Slots": [
@@ -1616,10 +1616,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 330.4000244140625,
-            "y": 780.0,
-            "width": 125.60000610351563,
-            "height": 118.4000244140625
+            "x": 1.6000099182128907,
+            "y": 850.4000244140625,
+            "width": 208.0,
+            "height": 302.4000244140625
         }
     },
     "m_Slots": [
@@ -1635,7 +1635,7 @@
     ],
     "synonyms": [],
     "m_Precision": 0,
-    "m_PreviewExpanded": false,
+    "m_PreviewExpanded": true,
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
@@ -2997,8 +2997,8 @@
     "m_ObjectId": "7b1737533fe94b0c8ede61c3dcd903eb",
     "m_Title": "Mask",
     "m_Position": {
-        "x": 10.0,
-        "y": 10.0
+        "x": -1052.0,
+        "y": 662.4000244140625
     }
 }
 
@@ -5356,7 +5356,7 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": {
-        "x": 0.0,
+        "x": 0.20000000298023225,
         "y": -0.20000000298023225,
         "z": 0.0,
         "w": 0.0
