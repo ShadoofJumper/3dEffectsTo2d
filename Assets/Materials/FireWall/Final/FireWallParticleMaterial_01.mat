@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: FireWallMaterial_00
-  m_Shader: {fileID: -6465566751694194690, guid: a75ae2d23d93f96479651a750441d36b, type: 3}
+  m_Name: FireWallParticleMaterial_01
+  m_Shader: {fileID: -6465566751694194690, guid: 613a0a919d383f14780d9c3b52e45988, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -98,12 +98,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Boolean_c90a85ae7fa44dd8a200cae98da3765f: 0
-    - Vector1_0195cf0b762c4b73b41e1ca3860dc030: 2
-    - Vector1_0e4ad05fbd5b4cbb8a581a81b35e20a8: 3.46
-    - Vector1_21798d3e8a584ff9bebdab6304104ef8: 0.986
-    - Vector1_7ad7921fc34348b995fcd224805af5ad: 0.83
-    - Vector1_83657450cb434ad19131bb96b59a642f: 0.5
-    - Vector1_9e5723cd5a664d318ba07adaa187eb0e: 1.5
+    - Vector1_0195cf0b762c4b73b41e1ca3860dc030: 6.65
+    - Vector1_0e4ad05fbd5b4cbb8a581a81b35e20a8: 1.92
+    - Vector1_21798d3e8a584ff9bebdab6304104ef8: 0.832
+    - Vector1_7ad7921fc34348b995fcd224805af5ad: 0.29
+    - Vector1_83657450cb434ad19131bb96b59a642f: 0.4
+    - Vector1_96dfda4689fd471683c56a6a2c5e268c: 1
+    - Vector1_9e5723cd5a664d318ba07adaa187eb0e: 1
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -132,7 +133,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - Color_dbe8814e502b4d559b1b5864becf99d6: {r: 1.735849, g: 0.26176766, b: 0.12281949, a: 1}
-    - Vector2_fb5a50f2b9664fd2a61905943cdcfa39: {r: -0.2, g: -0.4, b: 0, a: 0}
+    - Vector2_fb5a50f2b9664fd2a61905943cdcfa39: {r: 0.3, g: -0.3, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
