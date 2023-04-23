@@ -136,7 +136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2569150942170735593, guid: d6f5e966cf2ae46239c64ae7044287a2, type: 3}
       propertyPath: EmissionModule.enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2569150942170735593, guid: d6f5e966cf2ae46239c64ae7044287a2, type: 3}
       propertyPath: ShapeModule.radius.value
@@ -483,7 +483,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 146708413}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0bceffaaade2d4f7e87995f0e3ad7813, type: 3}
   m_Name: 
