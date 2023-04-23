@@ -393,20 +393,6 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
-                    "m_Id": "552538deddc14109a90fc37df8b3a2f6"
-                },
-                "m_SlotId": 2
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "e6baa0dc8cf444dfacfe08517c3c25b9"
-                },
-                "m_SlotId": 1
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
                     "m_Id": "5ef28b77bce84b5a9854587fc24d3c30"
                 },
                 "m_SlotId": 0
@@ -458,6 +444,20 @@
                     "m_Id": "552538deddc14109a90fc37df8b3a2f6"
                 },
                 "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "752a04b3a71446eda9fb5a33e26fc208"
+                },
+                "m_SlotId": 2
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "e6baa0dc8cf444dfacfe08517c3c25b9"
+                },
+                "m_SlotId": 1
             }
         },
         {
@@ -3033,8 +3033,8 @@
     "m_ObjectId": "7b1737533fe94b0c8ede61c3dcd903eb",
     "m_Title": "Mask",
     "m_Position": {
-        "x": -1052.0,
-        "y": 662.4000244140625
+        "x": -565.5999755859375,
+        "y": 662.4000854492188
     }
 }
 
@@ -4757,7 +4757,7 @@
     ],
     "synonyms": [],
     "m_Precision": 0,
-    "m_PreviewExpanded": true,
+    "m_PreviewExpanded": false,
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
