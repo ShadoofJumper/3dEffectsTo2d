@@ -29,7 +29,7 @@ public class CharacterBase : MonoBehaviour
         Debug.Log("target: "+_targetPos);
         _isMove = true;
         OnStartMove?.Invoke(_targetPos);
-        RotateCharacterTo();
+        //RotateCharacterTo();
         /*
         // Cast a ray from the mouse position
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
