@@ -91,12 +91,14 @@ public class CharacterBase : MonoBehaviour
     
     private void Die()
     {
+        _isMove = false;
         _canMove = false;
         OnExitState?.Invoke(_currentState);
         OnEnterState?.Invoke("Die");
     }
     private void Attack()
     {
+        _isMove = false;
         _canMove = false;
         OnExitState?.Invoke(_currentState);
         OnEnterState?.Invoke("Attack");
@@ -107,13 +109,15 @@ public class CharacterBase : MonoBehaviour
         {
             _explosionParticle.SetActive(true);
         });
-
         DOVirtual.DelayedCall(1.5f, () =>
         {
             _canMove = true;
             _glowAnim.SetActive(false);
             _glowParticles.SetActive(false);
             _explosionParticle.SetActive(false);
+            OnExitState?.Invoke(_currentState);
+            _currentState = "Idle";
+            OnEnterState(_currentState);
         });
     }
     private void OnDrawGizmos()
