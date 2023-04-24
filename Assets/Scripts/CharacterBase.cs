@@ -1,5 +1,6 @@
 using System;
 using UnityEditor;
+using UnityEditor.UIElements;
 using UnityEngine;
 
 public class CharacterBase : MonoBehaviour
@@ -12,11 +13,31 @@ public class CharacterBase : MonoBehaviour
     public Action<Vector3> OnStartMove;
     public Action OnStopMove;
 
+    public Action<string> OnEnterState;
+    public Action<string> OnExitState;
+    
+    public Vector3 ViewDirection { get; set; }
+
+    private string _currentState;
+
+    private bool _canMove = true;
+    
+    private void Awake()
+    {
+        _currentState = "Idle";
+        OnEnterState(_currentState);
+    }
+
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (_canMove && Input.GetMouseButtonDown(0))
         {
             InputRaycast();
+        }
+
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            Die();
         }
         MoveTo();
     }
@@ -29,20 +50,10 @@ public class CharacterBase : MonoBehaviour
         Debug.Log("target: "+_targetPos);
         _isMove = true;
         OnStartMove?.Invoke(_targetPos);
-        //RotateCharacterTo();
-        /*
-        // Cast a ray from the mouse position
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity)) // Check if the ray hits a plane
-        {
-            // Set the position of the GameObject to the hit point
-            Debug.Log("target: "+_targetPos);
-            _targetPos = hit.point;
-            _isMove = true;
-            OnStartMove?.Invoke(_targetPos);
-            RotateCharacterTo();
-        }
-        */
+        //
+        OnExitState?.Invoke(_currentState);
+        _currentState = "Move";
+        OnEnterState?.Invoke(_currentState);
     }
 
     private void MoveTo()
@@ -56,20 +67,32 @@ public class CharacterBase : MonoBehaviour
             Vector3 moveDirection = (_targetPos - transform.position).normalized;
             Vector3 targetPoint = moveDirection * _speed * Time.deltaTime;
             transform.position += new Vector3(targetPoint.x, targetPoint.y, 0);
+            ViewDirection = moveDirection;
         }
         else
         {
+            OnExitState?.Invoke(_currentState);
+            _currentState = "Idle";
+            OnEnterState?.Invoke(_currentState);
             OnStopMove?.Invoke();
             _isMove = false;
         }
     }
-
+    
+    private void Die()
+    {
+        _canMove = false;
+        OnExitState?.Invoke(_currentState);
+        OnEnterState?.Invoke("Die");
+    }
+    
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position, _targetPos);
     }
-
+    
+    
     private void RotateCharacterTo()
     {
         Vector3 moveDirection = (_targetPos - transform.position).normalized;
