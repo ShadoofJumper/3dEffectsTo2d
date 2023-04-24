@@ -1,11 +1,16 @@
 using System;
 using DG.Tweening;
-using UnityEditor;
-using UnityEditor.UIElements;
 using UnityEngine;
 
 public class CharacterBase : MonoBehaviour
 {
+    [Header("References::")] 
+    [SerializeField] private GameObject _glowAnim;
+    [SerializeField] private GameObject _glowParticles;
+    [SerializeField] private GameObject _explosionParticle;
+    [SerializeField] private float _delayExplosion = 1.0f;
+    [Header("Settings:")]
+    [Space]
     [SerializeField] private float _speed = 5;
     
     private Vector3 _targetPos;
@@ -95,9 +100,20 @@ public class CharacterBase : MonoBehaviour
         _canMove = false;
         OnExitState?.Invoke(_currentState);
         OnEnterState?.Invoke("Attack");
-        DOVirtual.DelayedCall(2.0f, () =>
+        //show particles
+        _glowAnim.SetActive(true);
+        _glowParticles.SetActive(true);
+        DOVirtual.DelayedCall(_delayExplosion, () =>
+        {
+            _explosionParticle.SetActive(true);
+        });
+
+        DOVirtual.DelayedCall(1.5f, () =>
         {
             _canMove = true;
+            _glowAnim.SetActive(false);
+            _glowParticles.SetActive(false);
+            _explosionParticle.SetActive(false);
         });
     }
     private void OnDrawGizmos()
