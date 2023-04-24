@@ -1,4 +1,5 @@
 using System;
+using DG.Tweening;
 using UnityEditor;
 using UnityEditor.UIElements;
 using UnityEngine;
@@ -38,6 +39,10 @@ public class CharacterBase : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.D))
         {
             Die();
+        }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            Attack();
         }
         MoveTo();
     }
@@ -85,7 +90,16 @@ public class CharacterBase : MonoBehaviour
         OnExitState?.Invoke(_currentState);
         OnEnterState?.Invoke("Die");
     }
-    
+    private void Attack()
+    {
+        _canMove = false;
+        OnExitState?.Invoke(_currentState);
+        OnEnterState?.Invoke("Attack");
+        DOVirtual.DelayedCall(2.0f, () =>
+        {
+            _canMove = true;
+        });
+    }
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;

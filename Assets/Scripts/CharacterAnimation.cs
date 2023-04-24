@@ -80,10 +80,15 @@ namespace Animation
                 Play("Idle");
             }else if (newState == "Die")
             {
-                Play("Death", false);
+                Play("Die", false);
             }else if (newState == "Move")
             {
                 Play("Move");
+                StartUpdateAnimationMoveDirection();
+            }
+            else if (newState == "Attack")
+            {
+                Play("Attack", false);
                 StartUpdateAnimationMoveDirection();
             }
         }
