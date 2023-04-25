@@ -15182,6 +15182,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 2569150943163622319, guid: d6f5e966cf2ae46239c64ae7044287a2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2569150943590828300, guid: d6f5e966cf2ae46239c64ae7044287a2, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -20508,7 +20512,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 398944704}
   serializedVersion: 7
-  lengthInSec: 0.7
+  lengthInSec: 0.5
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -40025,7 +40029,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 656448771}
   serializedVersion: 7
-  lengthInSec: 0.7
+  lengthInSec: 0.4
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -152202,7 +152206,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2943304157956978428, guid: b2c4ed94a4457479e8cf415fa8e642a6, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2943304157956978429, guid: b2c4ed94a4457479e8cf415fa8e642a6, type: 3}
       propertyPath: m_RootOrder
